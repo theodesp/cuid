@@ -44,7 +44,7 @@
 
 ; Get the current timestamp
 (define (timestamp)
-  (padded-block (current-milliseconds)))
+  (base36-encode (current-milliseconds)))
 
 ; Extract a unique fingerprint for the current process, using a
 ; combination of the process PID and the system's hostname.
