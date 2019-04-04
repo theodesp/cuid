@@ -24,11 +24,11 @@ Example
 
 The groups, in order, are:
 
-**`c`** - identifies this as a cuid, and allows you to use it in html entity ids.
-**Timestamp**
-**Counter** - a single process might generate the same random string. The weaker the pseudo-random source, the higher the probability. That problem gets worse as processors get faster. The counter will roll over if the value gets too big.
-**Client fingerprint**
-**Random** (using cryptographically secure libraries where available).
+ - **`c`** - identifies this as a cuid, and allows you to use it in html entity ids.
+ - **Timestamp**
+ - **Counter** - a single process might generate the same random string. The weaker the pseudo-random source, the higher the probability. That problem gets worse as processors get faster. The counter will roll over if the value gets too big.
+ - **Client fingerprint**
+ - **Random** (using cryptographically secure libraries where available).
 
 ## Short URLs
 Need a smaller ID? `slug` is for you. With 10 characters, `slug` is a great solution for short urls. 
